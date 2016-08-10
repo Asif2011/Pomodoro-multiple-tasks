@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AntiqueWhite"
+    android:gravity="bottom|center_horizontal|center_vertical|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tomato_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomato Count"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="30dip" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AntiqueWhite"
+        android:gravity="bottom|center_horizontal|center_vertical|top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/taskNametextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/taskDetailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dip"
+            android:layout_height="250dip"
+            android:indeterminate="false"
+            android:max="60"
+            android:progress="60"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/tvTimeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="00:00"
+            android:textColor="@color/Black"
+            android:textSize="40dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|top"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tomato_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/tomato_stop"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_default"
+            android:text="@string/stop_working"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/tomato_start"
+            android:layout_width="200dip"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_default"
+            android:text="@string/start_tomato" />
+
+        <Button
+            android:id="@+id/add_task_button"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_default"
+            android:onClick="myTaskFunction"
+            android:text="My Tasks" />
+    </LinearLayout>
+
+</LinearLayout>

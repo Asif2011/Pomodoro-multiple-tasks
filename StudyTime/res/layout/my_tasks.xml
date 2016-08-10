@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AntiqueWhite" >
+
+    <ListView
+        android:id="@+id/tasks_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_task_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/AntiqueWhite" >
+    </ListView>
+
+    <Button
+        android:id="@+id/add_task_button"
+        android:layout_width="160dp"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_default"
+        android:onClick="addTaskFunction"
+        android:text="Add Task" />
+
+    <Button
+        android:id="@+id/clear_Tasks_Button"
+        android:layout_width="160dp"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_default"
+        android:onClick="resetTaskButtonFunction"
+        android:text="Clear Tasks" />
+
+</RelativeLayout>
